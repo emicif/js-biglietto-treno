@@ -12,4 +12,33 @@ console.log('I Kilometri che devo pecorrere sono ' + km);
 // Costo 0.21€ al km
 const euroKM = 0.21
 
-console.log('Il costo del tuo biglietto è ' + km*euroKM)
+const tot = km*euroKM
+console.log('Il costo del tuo biglietto è ' + tot);
+
+
+
+// Costo se il passeggero è < 18 20% di sconto
+
+if (age < 18) {
+    console.log('è minorenne');
+
+} 
+else{
+    console.log('è maggiorenne');
+}
+
+
+// lo sconto
+const varTry = ((tot*20) / 100);
+const varSconto = (tot - varTry);
+console.log('Il costo del tuo biglietto con lo sconto minorenni è di €' + (varSconto .toFixed(2)));
+
+
+//tot * 20 / 100
+//tot - risultato
+
+
+
+/*if (age < 18) {
+    console.log(euroKmSconto)
+}*/
