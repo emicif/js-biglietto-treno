@@ -28,19 +28,37 @@ else{
 }
 
 
-// lo sconto
-const varTry = ((tot*20) / 100);
-const varSconto = (tot - varTry);
+// lo sconto dl 20% < 18
+let varTry = ((tot*20) / 100);
+let varSconto = (tot - varTry);
 console.log('Il costo del tuo biglietto con lo sconto minorenni è di €' + (varSconto .toFixed(2)));
 
 
 if(age < 18) {
-    const varTry = ((tot*20) / 100);
-    const varSconto = (tot - varTry);
+    let varTry = ((tot*20) / 100);
+    let varSconto = (tot - varTry);
     console.log('Il costo del tuo biglietto con lo sconto minorenni è di €' + (varSconto .toFixed(2)));
 }  else {
     console.log('Il costo del tuo biglietto è di €' + tot)
 }
+
+
+// lo sconto del 40% > 65
+varTry = ((tot*45) / 100);
+varSconto = (tot - varTry);
+console.log('Il costo del tuo biglietto con lo sconto minorenni è di €' + (varSconto .toFixed(2)));
+
+
+if(age > 65) {
+    let varTry = ((tot*20) / 100);
+    let varSconto = (tot - varTry);
+    console.log('Il costo del tuo biglietto con lo sconto over 65 è di €' + (varSconto .toFixed(2)));
+}  else {
+    console.log('Il costo del tuo biglietto è di €' + tot)
+}
+
+
+
 
 
 /*if (age < 18) {
