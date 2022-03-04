@@ -7,3 +7,9 @@ console.log('La mia età è ' + age);
 // Chiedo all'utente quanti km deve percorrere
 const km = prompt('Quanti km devi percorrere?');
 console.log('I Kilometri che devo pecorrere sono ' + km);
+
+
+// Costo 0.21€ al km
+const euroKM = 0.21
+
+console.log('Il costo del tuo biglietto è ' + km*euroKM)
