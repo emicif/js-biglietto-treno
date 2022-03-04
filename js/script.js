@@ -34,9 +34,13 @@ const varSconto = (tot - varTry);
 console.log('Il costo del tuo biglietto con lo sconto minorenni è di €' + (varSconto .toFixed(2)));
 
 
-//tot * 20 / 100
-//tot - risultato
-
+if(age < 18) {
+    const varTry = ((tot*20) / 100);
+    const varSconto = (tot - varTry);
+    console.log('Il costo del tuo biglietto con lo sconto minorenni è di €' + (varSconto .toFixed(2)));
+}  else {
+    console.log('Il costo del tuo biglietto è di €' + tot)
+}
 
 
 /*if (age < 18) {
