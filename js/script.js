@@ -50,12 +50,10 @@ varSconto = (tot - varTry);
 
 
 if(age > 65) {
-    let varTry = ((tot*20) / 100);
+    let varTry = ((tot*45) / 100);
     let varSconto = (tot - varTry);
     console.log('Il costo del tuo biglietto con lo sconto over 65 è di €' + (varSconto .toFixed(2)));
-}  else {
-    console.log('Il costo del tuo biglietto è di €' + tot)
-}
+} 
 
 
 
